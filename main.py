@@ -1,4 +1,3 @@
-import numpy as np
 import cv2 as cv
 
 cam = cv.VideoCapture(0)
@@ -23,11 +22,10 @@ while cam.isOpened() is True:
             cam.release()
 
         if grayscale_active is False:
-             cv.imshow("TEST", frame)
+             cv.imshow("RGB Image (Normal Filter)", frame)
              if key_listen == ord('g'):
                  grayscale_active = True
         if grayscale_active is True:
-            cv.imshow("TEST", imageToGray(frame))
+            cv.imshow("Grayscale Image (Grayscale Filter)", imageToGray(frame))
             if key_listen == ord('f'):
                  grayscale_active = False
-
