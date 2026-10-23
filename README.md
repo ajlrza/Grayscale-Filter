@@ -10,3 +10,9 @@ Uses OpenCV library to manipulate image color pixels from local camera into gray
 
 # Demo
 <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/d30d2baa-a45f-4205-b206-9747265b5930" />
+
+# Installation
+
+```python
+pip install
+```
